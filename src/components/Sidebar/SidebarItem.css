@@ -1,0 +1,37 @@
+
+.sidebar-item{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+    display: block;
+    transition: .15s;
+}
+
+.sidebar-item:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
+.sidebar-title{
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+}
+.sidebar-title span i{
+    display: inline-block;
+    width: 1.5em;
+}
+
+.sidebar-title .toggle-btn{
+    cursor: pointer;
+    transition: transform .3s;
+}
+/* .sidebar-item.open > .sidebar-title .toggle-btn{
+    transform: rotate(180deg);
+} */
+.sidebar-content{
+    padding-top: .25em;
+    height: 0;
+    overflow: hidden;
+}
+.sidebar-item.open > .sidebar-content{
+    height: auto;
+} 
