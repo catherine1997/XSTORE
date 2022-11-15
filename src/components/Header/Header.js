@@ -7,7 +7,7 @@ import {IoIosArrowDown} from 'react-icons/io'
 import {BsCart} from 'react-icons/bs'
 import {FiHelpCircle} from 'react-icons/fi'
 
-const Header = ({placeholder, data}) => {
+const Header = (props, {placeholder, data}) => {
 
   const [value, setValue] = useState('')
 
@@ -41,9 +41,10 @@ const Header = ({placeholder, data}) => {
             <p className='text-[#171717] font-500'>Account</p>
            <i className='toggle-btn'><IoIosArrowDown/></i> 
           </div>
-          <div className='flex space-x-1 items-center ml-5 '>
+          <div className='flex space-x-1 items-center ml-5 ' onClick={()=> props.handleShow(true)}>
            <i className=''><BsCart/></i> 
-           <p className='text-[#171717] font-500'>Cart</p>
+              <sup>{props.count}</sup>
+           <p className='text-[#171717] font-500' onClick={()=> props.handleShow(false)}>Cart</p>
           </div>
           <div className='flex space-x-1 items-center ml-5'>
            <i className='gap-5'><FiHelpCircle/></i> 

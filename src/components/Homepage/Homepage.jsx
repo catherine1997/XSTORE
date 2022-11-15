@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+// import Cart from '../Cart/Cart'
 
 
-function Homepage() {
+function Homepage({addToCart}) {
     const [data, setdata] = useState([])
     const fetchData = async () => {
         const response = await axios.get('https://fakestoreapi.com/products')
@@ -14,12 +15,14 @@ function Homepage() {
     },[] )
     // there is [] here
   
-function submitHandler(){
-    console.log('item added')
-}
+// function submitHandler(){
+//     console.log('item added')
+// }
+
 
     
-   
+ 
+
   return (
     <div className='m-20 ml-5 '>
         
@@ -33,7 +36,7 @@ function submitHandler(){
                     <img src={item.image} alt="" className='w-[165px] h-[244px] '/>
                     <p className='font-serif p-2 text-sm'>{item.title}</p>
                     <h3 className='font-serif p-2 text-sm'>$. {item.price}</h3>
-                    <button className='bg-[#2159E4] text-white m-0 h-10 w-40 rounded-lg text-sm' onClick={submitHandler} >add to cart</button>
+                    <button className='bg-[#2159E4] text-white m-0 h-10 w-40 rounded-lg text-sm' onClick={() => addToCart(item)} >add to cart</button>
                 </div>
             )
         })}
