@@ -29,7 +29,7 @@ const LoggedIn = () => {
     <div className='flex w-screen overflow-x-hidden'>
       <Sidebar />
       <div className='w-full max-w-[calc(100vw-20px)] '>
-      <Header count={cart.length} handleShow={handleShow} placeholder="Search for products, brands and categories....." />
+      <Header count={cart.length} handleShow={handleShow} />
      
       <div>
         <Routes>

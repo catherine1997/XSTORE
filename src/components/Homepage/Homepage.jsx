@@ -24,15 +24,16 @@ function Homepage({addToCart}) {
  
 
   return (
+    <>
     <div className='m-20 ml-5 '>
         
-        <h3 className='text-center text-5xl font-bold font-sans text-[#171717] ml-20 '>Top Selling Products</h3>
+        <h3 className='text-center text-5xl font-bold font-sans text-[#171717] ml-20 '>Top Selling Items</h3>
 
     <div className='grid grid-cols-6 m-10 gap-10 rounded-3xl rounded-t-3xl w-[100%]' >
 
         {data.map((item, index )=> {
             return (
-                <div className=' bg-[#FFFFFF] shadow hover:shadow-xl mh-[546px] mw-[253px] p-5 border-slate-50 rounded-3xl shadow-[#FFFFFF]' key={index}>
+                <div className=' bg-[#FFFFFF] shadow hover:shadow-xl max-h-[546px] max-w-[253px] p-5 border-slate-50 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
                     <img src={item.image} alt="" className='w-[165px] h-[244px] '/>
                     <p className='font-serif p-2 text-sm'>{item.title}</p>
                     <h3 className='font-serif p-2 text-sm'>$. {item.price}</h3>
@@ -42,6 +43,8 @@ function Homepage({addToCart}) {
         })}
     </div>
     </div>
+    
+    </>
     
   )
 }

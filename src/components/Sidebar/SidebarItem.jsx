@@ -13,7 +13,7 @@ if(item.children){
       return (
 
     <div className={ open ? "sidebar-item open" : "sidebar-item" }>
-    <div className='sidebar-title'>
+    <div className='sidebar-title cursor-pointer' onClick={()=> setOpen(!open)}>
         <span>
           {item.icon && <i className={item.icon}></i>}
           {item.title}

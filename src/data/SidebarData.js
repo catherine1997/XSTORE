@@ -4,6 +4,7 @@ export const SidebarData = [
     {
         title: 'Electronics',
         icon: '',
+        path: 'Computers',
         "children":[
             {
                 title: "Home",

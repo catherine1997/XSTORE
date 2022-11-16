@@ -7,7 +7,7 @@ import SidebarItem from './SidebarItem'
 
 const Sidebar = () => {
   return (
-    <div className='min-w-[250px] h-[100%] bg-slate-300 shadow-xl'> 
+    <div className='min-w-[250px] h-[100%] bg-[#EDEDED] shadow-xl'> 
       <div className='flex items-center justify-center h-[130px] bg-[#F3F3F3]'>
         <img src={logo} alt="" />
       </div>
