@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 // import Cart from '../Cart/Cart'
+import green from '../../assets/images/green.png'
+import airpod from '../../assets/images/airpod.png'
 
 
 function Homepage({addToCart}) {
@@ -18,11 +20,8 @@ function Homepage({addToCart}) {
 // function submitHandler(){
 //     console.log('item added')
 // }
-
-
     
  
-
   return (
     <>
     <div className='m-20 ml-5 '>
@@ -44,6 +43,38 @@ function Homepage({addToCart}) {
     </div>
     </div>
     
+    <div className='flex space-x-5 m-[50px]'>
+        
+        <div className='bg-[#F5F5F5]  w-[799px] h-[359px] flex overflow-hidden'>
+          <div className='ml-10 pt-20 leading-loose font-mono'>
+            <h3 className='font-extrabold text-3xl flex'>Deal of the Day </h3>
+               <h3 className='text-xl leading-loose'>Oraimo Earpod</h3>
+
+               <p className='leading-loose'>$000000123</p>
+               <button className='bg-[#2159E4] text-white text-sm h-8 w-40 rounded-lg'>Add to Cart</button>
+              </div>
+                  <div className='pt-10'>
+                 <div className='w-[423px] h-[368px] ml-5 pt-10 bg-[#4A4D50] rounded-tl-full'>
+             <img src={airpod} alt="" className='w-[208px] ml-[204px]'/>
+        </div>
+    </div>
+ </div>
+
+ <div className='bg-[#F5F5F5]  w-[799px] h-[359px] flex overflow-hidden'>
+          <div className='ml-10 pt-20 leading-loose font-mono'>
+            <h3 className='font-extrabold text-3xl'>Deal of the Day </h3>
+               <h3 className='text-xl leading-loose'>Nike Sneakers</h3>
+
+               <p className='leading-loose'>$000000123</p>
+               <button className='bg-[#2159E4] text-white text-sm h-8 w-40 rounded-lg leading-loose'>Add to Cart</button>
+              </div>
+                  <div className='pt-10'>
+                 <div className='w-[423px] h-[368px] ml-5 pt-20 bg-[#6CB5AE] rounded-tl-full'>
+                <img src={green} alt="" className='w-[297px]  ml-[104px]'/>
+        </div>
+    </div>
+ </div>
+    </div>
     </>
     
   )

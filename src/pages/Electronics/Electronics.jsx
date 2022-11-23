@@ -1,40 +1,4 @@
-// import React from 'react'
-// import Slider from "react-slick";
-// import Shoe from "../../assets/images/shoes.png"
 
-
-// const Electronics = () => {
-
-
-// const settings = {
-//   dots: false,
-//   infinite: true,
-//   speed: 500,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   lazyLoad: true,
-//   autoplay: true,
-//   autoplaySpeed: 7000,
-// };
-
-//   return (
-//      <Slider {...settings}>
-//       <div className='bg-[#EDEDED] h-609px max-w-screen-lg m-6'>
-//       <img src={Shoe} alt="" className='w-[623px] h-[468px]'/>
-//       </div>
-//       <div>
-//         <h3>2</h3>
-//       </div>
-//       <div>
-//         <h3>3</h3>
-//       </div>
-//       <div>
-//         <h3>4</h3>
-//       </div>
-    
-//     </Slider>
-//   )
-// }
 
 // export default Electronics
 import React from 'react'
