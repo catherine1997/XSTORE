@@ -12,7 +12,7 @@ const Header = (props) => {
  
 
   return (
-    <div className='h-[130px] w-full bg-[#EDEDED] flex'>
+    <div className='header h-[130px] w-full bg-[#EDEDED] flex '>
       <div className='search p-7 border-r-7 gap-20 '>
       <div className='search-input flex bg-white rounded-md h-[60px] w-[590px]'> 
       <div className='search-icon  '>
@@ -27,7 +27,7 @@ const Header = (props) => {
       </div>
 
       {/* Account session */}
-      <div className='pt-5 mr-20 flex space-x-2 ml-56'>
+      <div className='account pt-5 mr-20 flex space-x-2 ml-56'>
       
           <div className='flex space-x-1 items-center mr-5'>
           <BsPerson className='h-30 w-30'/>

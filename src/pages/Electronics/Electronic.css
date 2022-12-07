@@ -1,0 +1,13 @@
+@media  (max-width: 850){
+    .session{
+        display: none;
+    }
+    .btn{
+        width: 20px;
+        font-size: x-small;
+    }
+    .image{
+        width: 100px;
+        height: 80px;
+    }
+}

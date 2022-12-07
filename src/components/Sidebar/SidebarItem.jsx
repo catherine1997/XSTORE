@@ -7,6 +7,8 @@ import './SidebarItem.css'
 
 function SidebarItem({item}) {
 
+   
+
     const[open, setOpen] = useState(false);
     
 if(item.children){
@@ -34,6 +36,7 @@ if(item.children){
         {item.icon && <i className={item.icon}></i>}
           {item.title}
         </span>
+
       
 </a>
   )

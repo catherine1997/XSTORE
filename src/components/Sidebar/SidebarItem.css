@@ -35,3 +35,51 @@
 .sidebar-item.open > .sidebar-content{
     height: auto;
 } 
+
+.menu-bar{
+    display: none;
+    
+}
+
+.menu-close{
+    display: none
+}
+
+@media screen and (max-width: 850px){
+    .sidebar-item{
+        display: none;  
+        width: 100px;
+    }
+  
+    .logo{
+        display: block;
+        width: 60%;
+        margin: 20px; 
+        padding: 20px;
+    }
+  
+}
+
+@media screen and (max-width: 650px){
+     .sidebar-item{
+        display: none;
+       
+     }
+     .logo{
+        display: none;
+     }
+  
+}
+
+@media screen and (max-width: 650px){
+    .menu-bar{
+        display: block; 
+        /* margin-right: 150px;      */
+    }
+
+   .menu-close{
+    display: block;
+   }
+  
+}
+

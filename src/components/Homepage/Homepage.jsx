@@ -47,7 +47,7 @@ function Homepage({addToCart}) {
         
         <div className='bg-[#F5F5F5]  w-[799px] h-[359px] flex overflow-hidden'>
           <div className='ml-10 pt-20 leading-loose font-mono'>
-            <h3 className='font-extrabold text-3xl flex'>Deal of the Day </h3>
+            <h3 className='font-extrabold text-3xl'>Deal of the Day</h3>
                <h3 className='text-xl leading-loose'>Oraimo Earpod</h3>
 
                <p className='leading-loose'>$000000123</p>

@@ -7,6 +7,7 @@ import Header from '../Header/Header'
 import Sidebar from '../Sidebar/Sidebar'
 import Cart from '../Cart/Cart'
 import Homepage from '../Homepage/Homepage'
+import Scrollbar from '../Homepage/Scrollbar'
 
 
 
@@ -29,7 +30,7 @@ const LoggedIn = () => {
     <div className='flex w-screen overflow-x-hidden'>
       <Sidebar />
       <div className='w-full max-w-[calc(100vw-20px)] '>
-      <Header count={cart.length} handleShow={handleShow} />
+      <Header count={cart.length} handleShow={handleShow}/>
      
       <div>
         <Routes>
@@ -45,7 +46,7 @@ const LoggedIn = () => {
       showCart ?  <Cart  cart={cart}/>:
       <Homepage  addToCart={addToCart}/>
     }
-   
+   <Scrollbar />
   
     </>
   )
