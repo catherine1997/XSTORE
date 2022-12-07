@@ -15,13 +15,13 @@ const Sidebar = () => {
   
   return (
     <div className=''> 
-    <div className= {`min-w-[250px] h-[100%]  ${show ? 'w-72' : 'w-10'}  duration-500 bg-[#EDEDED] shadow-xl `}> 
+    <div className= {`min-w-[250px] h-[100%]  ${ show ? 'w-72'  : 'w-16'}  duration-500 bg-[#EDEDED] shadow-xl `}> 
     
       <div className='flex items-center  justify-center h-[130px] bg-[#F3F3F3] text-gray-500 ' onClick={()=> setShow(!show)}>
 
        <button className=''>
-      { show ? <AiOutlineClose  size ={32}  className="menu-bar cursor-pointer" onClick={()=> setShow(show)}/> :
-       <HiMenu size={32} className='menu-close' onClick={()=> setShow(!show)}/>} 
+      { show ? <AiOutlineClose  size ={32}  className="menu-bar cursor-pointer" onClick={()=> setShow(!show)}/> :
+       <HiMenu size={32} className='menu-close' onClick={()=> setShow(show)}/>} 
        
        </button>
   

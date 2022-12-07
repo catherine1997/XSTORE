@@ -27,7 +27,7 @@ const Electronics = () => {
     <>
     <div className='max-w-[80%] overflow-hidden m-5 ' >
     <Slider {...settings}>
-      <div className='session m-5 bg-[#EDEDED] h-[608px] max-w-screen-xlg'>
+      <div className=' m-5 bg-[#EDEDED] h-[608px] max-w-screen-xlg'>
   
       <div className=' flex leading-12 font-sans text-5xl font-medium text-[#171717] pt-20 '>
         <div className='p-18 ml-20 mt-10 leading-snug' >
@@ -35,7 +35,7 @@ const Electronics = () => {
          <h3>with <b>Nike</b> Shoes</h3>
          <p className='text-sm text-[#4B4B4B]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptate adipisci modi aut, praesentium in, eius voluptates facere cum blanditiis error amet. Iusto suscipit ad voluptate nam veritatis ipsam ipsum.</p>
             <br/>
-         <button className='btn w-[231px] h-[60px] bg-[#2159E4] rounded-xl text-[#FFFFFF]' ><p className='text-xl'>Shop Now</p></button>
+         <button className=' w-[231px] h-[60px] bg-[#2159E4] rounded-xl text-[#FFFFFF]' ><p className='text-xl'>Shop Now</p></button>
         </div>
          <img src={Shoe} alt="" className='image w-[623px] h-[468px] mb-20 mr-5'/>
       </div>
