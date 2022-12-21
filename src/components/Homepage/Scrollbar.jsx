@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 // import {MdChevronRight, MdChevronLeft} from 'react-icons/md'
+import './Scrollbar.css'
 
 
 
@@ -30,7 +31,7 @@ function Scrollbar({addToCart}) {
 
   return (
     <div className='m-32 '>
-       <h3 className='text-center text-5xl font-bold font-sans text-[#171717] ml-20 '>Popular Products in Cars and Automobile</h3>
+       <h3 className='title text-center text-5xl font-bold font-sans text-[#171717] ml-20 '>Popular Products in Cars and Automobile</h3>
 
          {/* <MdChevronLeft onClick= {slideLeft} size={40} />  */}
     <div id='slider' className='w-[100%] h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth '>
@@ -41,10 +42,10 @@ function Scrollbar({addToCart}) {
         
         return (
             <div className=' bg-[#FFFFFF] shadow hover:scale-105 cursor-pointer ease-in-out duration-300 max-h-[546px] max-w-[253px] p-5 border-slate-50 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
-                <img src={item.image} alt="" className='w-[165px] h-[244px] '/>
+                <img src={item.image} alt="" className='items w-[165px] h-[244px] '/>
                 {/* <p className='font-serif p-2 text-sm'>{item.title}</p> */}
-                <h3 className='font-serif p-2 text-sm'>$. {item.price}</h3>
-                <button className='bg-[#2159E4] text-white m-0 h-10 w-40 rounded-lg text-sm' onClick={() => addToCart(item)} >add to cart</button>
+                <h3 className='price font-serif p-2 text-sm'>$. {item.price}</h3>
+                <button className='button bg-[#2159E4] text-white m-0 h-10 w-40 rounded-lg text-sm' onClick={() => addToCart(item)} >add to cart</button>
             </div>
         )
     })} 

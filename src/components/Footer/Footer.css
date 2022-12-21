@@ -1,0 +1,14 @@
+@media (max-width: 850px) {
+    .footer{
+        width: 400px;
+        font-size: 10px;
+    }
+    .arrow{
+        width: 10px;
+        height: 20px;
+
+    }
+   .horizontal{
+    line-height: 5px;
+   }
+}

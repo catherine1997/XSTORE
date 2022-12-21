@@ -4,11 +4,12 @@ import {VscGlobe} from 'react-icons/vsc'
 import {BiBitcoin} from 'react-icons/bi'
 import {FcGlobe} from 'react-icons/fc'
 import logo from '../../assets/svg/xstore-logo.svg'
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='bg-[#EDEDED]'>
-    <div className='flex flex-wrap w-full h-[300px] gap-96 p-10 font-sans leading-loose'>
+    <div className='footer bg-[#EDEDED]'>
+    <div className=' flex flex-wrap w-full h-[300px] gap-96 p-10 font-sans leading-loose'>
       <div>
        <p className='font-bold text-2xl leading-loose'>Get to know</p> 
          <p>Blog</p>
@@ -40,11 +41,11 @@ const Footer = () => {
         </div>
     </div>
 
-    <div className='flex gap-20 m-10'>
+    <div className=' horizontal flex flex-wrap gap-20 m-10'>
       <div className=''>
-        <img src={logo} alt='' className='w-44 h-12'/>
+        <img src={logo} alt='' className='w-44 h-12 '/>
       </div>
-      <div className='border-4 bg-[#FFFFFF] rounded-xl ' >
+      <div className=' border-4 bg-[#FFFFFF] rounded-xl ' >
         <button className='w-72 h-12 flex items-center'> <VscGlobe className='m-2'/>English 
         <MdKeyboardArrowDown className='ml-36'/>
         </button>
@@ -55,14 +56,14 @@ const Footer = () => {
         </button>
         </div>
       <div className='border-4 bg-[#FFFFFF]  rounded-xl '> 
-        <button className='w-72 h-12 flex items-center'><FcGlobe className='m-2'/>Nigeria
+        <button className=' w-72 h-12 flex items-center'><FcGlobe className='m-2'/>Nigeria
         <MdKeyboardArrowDown className='ml-36'/>
         </button>
         </div>
     </div>
 
 
-    <div className=' bg-[#4B4B4B] text-white h-[128px] rounded-b-3xl text-center '>
+    <div className='bg-[#4B4B4B] text-white h-[128px] rounded-b-3xl text-center '>
      <div className='flex gap-24 p-10 w'>
       <p>Condition of Use</p>
       <p>Privacy Notice</p>

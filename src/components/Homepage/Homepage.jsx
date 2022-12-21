@@ -33,7 +33,7 @@ function Homepage({addToCart}) {
 
         {data.map((item, index )=> {
             return (
-                <div className=' bg-[#FFFFFF] shadow hover:shadow-xl duration-500 max-h-[546px] max-w-[253px] p-5 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
+                <div className=' bg-[#FFFFFF] shadow hover:scale-105 cursor-pointer ease-in-out duration-500 max-h-[546px] max-w-[253px] p-5 border-slate-50 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
                     <img src={item.image} alt="" className='w-[165px] h-[244px] '/>
                     {/* <p className='font-serif p-2 text-sm'>{item.title}</p> */}
                     <h3 className='font-serif p-2 text-sm'>$. {item.price}</h3>
@@ -52,7 +52,7 @@ function Homepage({addToCart}) {
 
         {data.map((item, index )=> {
             return (
-                <div className=' bg-[#FFFFFF] shadow hover:shadow-xl duration-500 max-h-[546px] max-w-[253px] p-5 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
+                <div className='  bg-[#FFFFFF] shadow hover:scale-105 cursor-pointer ease-in-out duration-300 max-h-[546px] max-w-[253px] p-5 border-slate-50 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
                     <img src={item.image} alt="" className='w-[165px] h-[244px] '/>
                     {/* <p className='font-serif p-2 text-sm'>{item.title}</p> */}
                     <h3 className='font-serif p-2 text-sm'>$. {item.price}</h3>
@@ -71,7 +71,7 @@ function Homepage({addToCart}) {
 
         {data.map((item, index )=> {
             return (
-                <div className=' bg-[#FFFFFF] shadow hover:shadow-xl duration-500 max-h-[546px] max-w-[253px] p-5 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
+                <div className='  bg-[#FFFFFF] shadow hover:scale-105 cursor-pointer ease-in-out duration-300 max-h-[546px] max-w-[253px] p-5 border-slate-50 rounded-3xl shadow-[#FFFFFF] hover:w-[548px]' key={index}>
                     <img src={item.image} alt="" className='w-[165px] h-[244px] '/>
                     {/* <p className='font-serif p-2 text-sm'>{item.title}</p> */}
                     <h3 className='font-serif p-2 text-sm'>$. {item.price}</h3>
@@ -93,7 +93,7 @@ function Homepage({addToCart}) {
                <button className='button bg-[#2159E4] text-white text-sm h-8 w-40 rounded-lg'>Add to Cart</button>
               </div>
                   <div className='pt-10'>
-                 <div className='black w-[423px] h-[368px] ml-5 pt-10 bg-[#4A4D50] rounded-tl-full'>
+                 <div className=' w-[423px] h-[368px] ml-5 pt-10 bg-[#4A4D50] rounded-tl-full'>
              <img src={airpod} alt="" className='image w-[208px] ml-[204px]'/>
         </div>
     </div>
@@ -108,7 +108,7 @@ function Homepage({addToCart}) {
                <button className='button bg-[#2159E4] text-white text-sm h-8 w-40 rounded-lg leading-loose'>Add to Cart</button>
               </div>
                   <div className='pt-10'>
-                 <div className='black w-[423px] h-[368px] ml-5 pt-20 bg-[#6CB5AE] rounded-tl-full'>
+                 <div className=' w-[423px] h-[368px] ml-5 pt-20 bg-[#6CB5AE] rounded-tl-full'>
                 <img src={green} alt="" className='image w-[297px]  ml-[104px]'/>
         </div>
     </div>
